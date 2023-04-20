@@ -1,0 +1,20 @@
+:host {
+  .circular-progress {
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+
+    &__value {
+      height: calc(100% - 14px);
+      width: calc(100% - 14px);
+      background-color: var(--surface);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+
+      &__percentage {
+        color: var(--primary);
+      }
+    }
+  }
+}

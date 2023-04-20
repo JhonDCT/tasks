@@ -1,0 +1,11 @@
+:host {
+  button {
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+
+    &:hover {
+      background-color: var(--text-off);
+    }
+  }
+}

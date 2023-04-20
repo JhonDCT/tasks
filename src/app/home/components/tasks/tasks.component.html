@@ -1,0 +1,15 @@
+<section class="tasks">
+  <header class="tasks__header">
+    <span>
+      <h5><strong>Tareas</strong></h5>
+      <ui-badge></ui-badge>
+    </span>
+    <ui-button>filtrar</ui-button>
+  </header>
+
+  <div class="tasks__list">
+    <ng-container *ngFor="let task of tasks">
+      <app-task class="tasks__list__item"></app-task>
+    </ng-container>
+  </div>
+</section>

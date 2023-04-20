@@ -1,0 +1,25 @@
+<div class="proyect">
+  <div class="proyect__members">
+    <p>{{ expiredDate | date : 'dd/MMM/yyyy' }}</p>
+    <div class="proyect__members__group">
+      <ng-container *ngFor="let member of members">
+        <ui-avatar
+          class="proyect__members__group__member"
+          avatarUrl="https://randomuser.me/api/portraits/women/65.jpg"></ui-avatar>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="proyect__activities">
+    <p class="subtitle-1"><strong>Actividades</strong></p>
+    <ol>
+      <ng-container *ngFor="let activity of activities">
+        <li>{{ activity }}</li>
+      </ng-container>
+    </ol>
+  </div>
+
+  <h5>
+    <strong>{{ teamName }}</strong>
+  </h5>
+</div>

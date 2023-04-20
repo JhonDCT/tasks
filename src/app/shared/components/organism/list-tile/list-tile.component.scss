@@ -1,0 +1,19 @@
+:host {
+  .list-tile {
+    background-color: var(--background);
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+
+    &__main {
+      flex: 1 1;
+    }
+
+    &__trailing {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<section class="proyects">
+  <header class="proyects__header">
+    <span>
+      <h5><strong>Proyectos</strong></h5>
+      <ui-badge></ui-badge>
+    </span>
+    <ui-button>ver todos</ui-button>
+  </header>
+
+  <div class="proyects__list">
+    <ng-container *ngFor="let proyect of proyects">
+      <app-proyect class="proyects__list__item"></app-proyect>
+    </ng-container>
+  </div>
+</section>

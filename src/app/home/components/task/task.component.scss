@@ -1,0 +1,33 @@
+:host {
+  .task {
+    background-color: var(--surface);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+
+    &__header {
+      display: flex;
+      gap: 24px;
+
+      ui-circular-progress {
+        flex: 1 1;
+      }
+    }
+
+    &__table {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &__expired {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--primary);
+    }
+  }
+}

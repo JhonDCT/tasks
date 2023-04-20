@@ -1,0 +1,13 @@
+:host {
+  .tasks-pending {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    &__progress {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

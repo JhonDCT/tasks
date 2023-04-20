@@ -1,1 +1,153 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('assets/fonts/Euclid\ Circular\ A\ Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('assets/fonts/Euclid\ Circular\ A\ Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('assets/fonts/Euclid\ Circular\ A\ Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('assets/fonts/Euclid\ Circular\ A\ SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('assets/fonts/Euclid\ Circular\ A\ Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+:root {
+  --primary: #3862dd;
+  --secondary: #131f37;
+  --background: #f2f5f9;
+  --surface: #f2f5f9;
+  --error: #ee2239;
+  --success: #12b96a;
+  --text: #131f37;
+  --text-off: #aab7c7;
+  --text-light: #ffffff;
+  --item: #ff597f; // #ffc420 | #48ced3
+}
+
+html,
+body {
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  color: var(--secondary);
+  background-color: var(--background);
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 6rem; // 96px
+  line-height: 7rem; // 112px
+  letter-spacing: -1.5px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 3.75rem; // 60px
+  line-height: 4.375rem; // 70px
+  letter-spacing: -0.5px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 3rem; // 48px
+  line-height: 3.5rem; // 56px
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 2.125rem; // 34px
+  line-height: 2.5rem; // 40px
+  letter-spacing: 0.25px;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 1.5rem; // 24px
+  line-height: 1.75rem; // 28px
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 1.25rem; // 20px
+  line-height: 1.438rem; // 23px
+  letter-spacing: 0.15px;
+}
+
+.subtitle-1 {
+  font-weight: 400;
+  font-size: 1rem; // 16px
+  line-height: 1.188rem; // 19px
+  letter-spacing: 0.15px;
+}
+
+.subtitle-2 {
+  font-weight: 500;
+  font-size: 0.875rem; // 14px
+  line-height: 1rem; // 16px
+  letter-spacing: 0.1px;
+}
+
+.body-1 {
+  font-weight: 400;
+  font-size: 1rem; // 16px
+  line-height: 1.188rem; // 19px
+  letter-spacing: 0.5px;
+}
+
+.body-2 {
+  font-weight: 400;
+  font-size: 0.875rem; // 14px
+  line-height: 1rem; // 16px
+  letter-spacing: 0.25px;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 0.875rem; // 14px
+  line-height: 1rem; // 16px
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+.caption {
+  font-weight: 400;
+  font-size: 0.75rem; // 12px
+  line-height: 0.875rem; // 14px
+  letter-spacing: 0.4px;
+}
+
+.overline {
+  font-weight: 500;
+  font-size: 0.625rem; // 10px
+  line-height: 0.75rem; // 12px
+  letter-spacing: 1.5px;
+}
+
+p[data-disabled],
+span[data-disabled],
+h1[data-disabled],
+h2[data-disabled],
+h3[data-disabled],
+h4[data-disabled],
+h5[data-disabled],
+h6[data-disabled] {
+  color: var(--text-off);
+}

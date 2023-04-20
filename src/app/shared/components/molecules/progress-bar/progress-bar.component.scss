@@ -1,0 +1,14 @@
+:host {
+  width: 100%;
+
+  .progress-bar {
+    background-color: var(--text-off);
+    border-radius: 50px;
+
+    &__progress {
+      height: 10px;
+      border-radius: 50px;
+      background-color: var(--primary);
+    }
+  }
+}
